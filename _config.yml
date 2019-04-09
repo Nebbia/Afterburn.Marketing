@@ -75,4 +75,3 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-menus
-  - jemoji
