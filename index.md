@@ -5,54 +5,32 @@ date: 2017-11-22 23:00:00 +0000
 page_sections:
 - block: header-3
   # logo: "/uploads/2018/06/21/forestry-full.svg"
-- block: hero-2
-  headline: uBuild <br><strong>design blocks</strong>
-  content: The tool that allows you to build beautiful sites<br>all inside Forestry's
-    content manager.
-  cta:
-    enabled: true
-    url: https://github.com/forestryio/ubuild-jekyll
-    button_text: 'See on GitHub '
-  image:
-    image: "/uploads/2018/06/21/product-shot-1.png"
-    alt_text: Product Shot
-  background_image: "/uploads/2018/06/21/hero-2-bg.png"
-- block: feature-1
-  media_alignment: Left
-  headline: <strong>Swap &amp; Switch<span class="light">&nbsp;</span></strong><span
-    class="light">the Blocks to create sites quickly</span>
-  content: Quickly assemble and create custom sites with 16 design blocks for seven
-    different sections.
-  media:
-    image: "/uploads/2018/06/21/blocks-split.png"
-    alt_text: uBuild Blocks Mock-Up
-- block: feature-1
-  media_alignment: Right
-  headline: <strong>Customize Blocks</strong><span class="light">&nbsp;to make quick
-    edits throughout your new site</span>
-  content: Each block comes with custom Front Matter that can easily be edited in
-    Forestry's UI.
-  media:
-    image: "/uploads/2018/06/21/edit.gif"
-    alt_text: Customize Blocks
+- block: hero-1
+  headline: Make Your Software Delivery Performance Take Off
+  content: Building software doesn’t have to feel like drudgery. Afterburn by Nebbia Technology helps you make decisions, measure your progress, ease stress, and help you get back to enjoying software development.
 - block: one-column-1
-  headline: 16 Fully Responsive Design Blocks
-  content: "The Design Blocks can be used without Forestry but to harness the power
-    of Blocks we recommend using Forestry. Once the site is imported you can immediately
-    create new sites and make them fully customizable. \U0001F447"
-- block: media-1
-  image: "/uploads/2018/06/21/theme.png"
-  caption: All Available Blocks
-- block: text-1
-  headline: Steps to Build a Site!
-  content: <p>uBuild is an open-source Jekyll based theme that doubles as a builder
-    tool inside the Forestry content manager. It's easy to get started!</p><ol><li><p>Fork
-    the <a href="https://github.com/forestryio/ubuild-jekyll">repo</a> and import
-    the site into <a href="https://forestry.io/">Forestry</a> (or use <a href="https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks#even-quicker-start">our
-    magic button</a>).</p></li><li><p>Click on 'Add New' in Forestry and select the
-    Page-Builder template.</p></li><li><p>Add and customize the available Blocks and
-    preview them as you go along.</p></li><li><p>Read <a href="https://forestry.io/blog/ubuild-a-new-theme-for-static-sites-using-blocks/">our
-    article</a> and create your own Blocks.</p></li></ol>
+  headline: Getting Up To Speed
+  content: >-
+    "Our first step is to bring you and your team up to speed with what we are measuring and why. With three one-hour training sessions, we establish:"
+    · What separates high and low performers in software development
+    · What to measure to find out how you stack up
+    · How to take action on those metrics
+    · What immediate pain points are most effective at addressing within your team
+- block: one-column-1
+  headline: Benchmarking Your Performance
+  content: We take what you share about your process and create a customized software delivery performance benchmark for your team. From this benchmark, you can find out… so you not only know what areas you could improve in, you understand how you stack up against other teams – and how that affects your overall success.
+- block: one-column-1
+  headline: Get Automated Performance Metrics In Your Inbox
+  content: How well is your team meeting its software development goals? We send you a weekly diagnostics report that breaks down how your team is doing across four key research-backed metrics that are strongly correlated with not only software delivery performance, but organizational performance as well.
+- block: one-column-1
+  headline: "Powered By Nebbia: Leverage Our Experience"
+  content: Nebbia Technology has helped dozens of organizations improve their software delivery processes for years. We’re big on helping people take their software ideas and get them into production ASAP, whether that’s the first line of code or the millionth. We’ve worked with companies with one employee and companies with over 10,000. We are developers and consultants that simply love seeing our clients move faster and do better.
+- block: one-column-1
+  headline: What To Expect
+  content: >-
+  · Three one-hour training sessions with you and your team
+  · One customized software delivery benchmark report
+  · Three months of automated weekly performance metrics in your inbox
 - block: footer-1
   content: Made with Love by Nebbia Tech! ❤︎
 ---
