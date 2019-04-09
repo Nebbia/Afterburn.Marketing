@@ -3,6 +3,10 @@
 To contribute, begin here:
 https://jekyllrb.com/docs/
 
+To run the site locally:
+0. bundle install
+0. bundle exec jekyll serve
+
 
 ![uBuild Blocks](uploads/2018/06/21/theme.png)
 

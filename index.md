@@ -8,6 +8,8 @@ page_sections:
 - block: hero-2
   headline: Make Your Software Delivery Performance Take Off
   content: Building software doesn’t have to feel like drudgery. Afterburn by Nebbia Technology helps you make decisions, measure your progress, ease stress, and help you get back to enjoying software development.
+  image:
+    image: "/assets/img/afterburn.jpg"
 - block: text-1
   headline: Getting Up To Speed
   content: >-
@@ -31,6 +33,33 @@ page_sections:
     <ul style="margin-left:2em"><li>Three one-hour training sessions with you and your team</li>
     <li>One customized software delivery benchmark report</li>
     <li>Three months of automated weekly performance metrics in your inbox</li></ul>
+- block: text-1
+  headline: Request to Join!
+  content: >-
+    <form name="contact" netlify>
+      <p>
+        <label>Name <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Email <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Phone <input type="tel" name="phone" /></label>
+      </p>
+      <p>
+        <label>Repository Host <input type="text" name="repo-host" placeholder="GitHub"/></label>
+      </p>
+      <p>
+        <label>Build/Release System <input type="text" name="build-system" placeholder="Jenkins"/></label>
+      </p>
+      <p>
+        <label>Company <input type="text" name="company"/></label>
+      </p>
+      <br/>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
 - block: footer-1
   content: Made with Love by Nebbia Tech! ❤︎
 ---
