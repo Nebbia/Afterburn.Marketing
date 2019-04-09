@@ -73,9 +73,6 @@ exclude:
 ##############################
 plugins:
   - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-gist
   - jekyll-feed
   - jekyll-menus
-  - jekyll-redirect-from
   - jemoji
