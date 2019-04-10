@@ -1,15 +1,35 @@
 <div class="block block-cta-bar">
   <div class="container">
     <div class="columns">
-        <div class="text">
-          <p>{{ section.content }}</p>
-        </div>
-        <div class="cta">
-          <form action="https://formspree.io/{{ section.email_recipient }}" method="POST">
-            <input type="email" placeholder="your@email.com" class="inverted">
-            <button type="submit" class="button primary inverted">Sign up</button>
-          </form>
-        </div>
+      <div class="text">
+        <p>{{ section.content }}</p>
+      </div>
+      <div class="cta">
+        <form name="contact" netlify>
+          <p>
+            <label>Name <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Email <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>Phone <input type="tel" name="phone" /></label>
+          </p>
+          <p>
+            <label>Repository Host <input type="text" name="repo-host" placeholder="GitHub" /></label>
+          </p>
+          <p>
+            <label>Build/Release System <input type="text" name="build-system" placeholder="Jenkins" /></label>
+          </p>
+          <p>
+            <label>Company <input type="text" name="company" /></label>
+          </p>
+          <br />
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
     </div>
   </div>
 </div>

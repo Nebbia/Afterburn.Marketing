@@ -6,11 +6,23 @@ sitemap: false
 @import "variables";
 @import "block";
 
-.block-feature-1 {
-    background: #ffcb3c;
-    color: #fff;
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 
-    p {
-        color: #fff;
-    }
+.block-feature-1 {
+  background: #ffcb3c;
+  color: #fff;
+
+  p {
+    color: #fff;
+  }
+}
+
+.interior-list {
+  h3 {
+    padding-top: 15px;
+  }
 }
