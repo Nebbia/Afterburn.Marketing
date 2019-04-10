@@ -16,7 +16,7 @@ page_sections:
     <div>Our first step is to bring you and your team up to speed with what we are measuring and why. It all starts with three one-hour training sessions.</div>
     <div class="interior-list">
       <h3>Session 1</h3>
-      <div>what to measure to find out how you stack up</div>
+      <div>What to measure to find out how you stack up</div>
       <h3>Session 2</h3>
       <div>How to take action on those metrics.</div>
       <h3>Session 3</h3>
@@ -30,7 +30,7 @@ page_sections:
   media:
     image: "/assets/img/performance-benchmark-snippet.png"
 - block: feature-2
-  headline: "Powered By Nebbia: Leverage Our Experience"
+  headline: "Leverage Our Experience"
   content: Nebbia Technology has helped dozens of organizations improve their software delivery processes for years. We’re big on helping people take their software ideas and get them into production ASAP, whether that’s the first line of code or the millionth. We’ve worked with companies with one employee and companies with over 10,000. We are developers and consultants that simply love seeing our clients move faster and do better.
   media:
     image: "/assets/img/nebbia-logo.jpg"
