@@ -5,3 +5,12 @@ sitemap: false
 // Partials
 @import "variables";
 @import "block";
+
+.block-feature-1 {
+    background: #ffcb3c;
+    color: #fff;
+
+    p {
+        color: #fff;
+    }
+}

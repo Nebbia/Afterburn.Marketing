@@ -10,17 +10,26 @@ page_sections:
   content: Building software doesn’t have to feel like drudgery. Afterburn by Nebbia Technology helps you make decisions, measure your progress, ease stress, and help you get back to enjoying software development.
   image:
     image: "/assets/img/afterburn.jpg"
-- block: text-1
+- block: feature-2
   headline: Getting Up To Speed
-  content: >-
-    <span>Our first step is to bring you and your team up to speed with what we are measuring and why. With three one-hour training sessions, we establish:</span>
-    <ul style="margin-left:2em"><li>What separates high and low performers in software development</li>
-    <li>What to measure to find out how you stack up</li>
-    <li>How to take action on those metrics</li>
-    <li>What immediate pain points are most effective at addressing within your team</li></ul>
-- block: one-column-1
+  content: Our first step is to bring you and your team up to speed with what we are measuring and why. It all starts with three one-hour training sessions.
+  media:
+    image: "/assets/img/jared-meeting.jpeg"
+- block: three-column-1
+  col_1:
+    headline: Session 1
+    content: What to measure to find out how you stack up.
+  col_2:
+    headline: Session 2
+    content: How to take action on those metrics.
+  col_3:
+    headline: Session 3
+    content: What to address first within <i>your</i> team.
+- block: feature-1
   headline: Benchmarking Your Performance
   content: We take what you share about your process and create a customized software delivery performance benchmark for your team. From this benchmark, you can find out… so you not only know what areas you could improve in, you understand how you stack up against other teams – and how that affects your overall success.
+  media:
+    image: "/assets/img/lights.jpg"
 - block: one-column-1
   headline: Get Automated Performance Metrics In Your Inbox
   content: How well is your team meeting its software development goals? We send you a weekly diagnostics report that breaks down how your team is doing across four key research-backed metrics that are strongly correlated with not only software delivery performance, but organizational performance as well.
