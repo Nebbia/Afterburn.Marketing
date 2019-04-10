@@ -4,7 +4,7 @@ title: Afterburn
 date: 2017-11-22 23:00:00 +0000
 page_sections:
 - block: header-3
-  # logo: "/uploads/2018/06/21/forestry-full.svg"
+  logo: "/assets/img/afterburn-logo.png"
 - block: hero-2
   headline: make your <br/> <strong>Software Delivery Performance Take Off</strong>
   content: Building software doesn’t have to feel like drudgery. Afterburn by Nebbia Technology helps you make decisions, measure your progress, ease stress, and help you get back to enjoying software development.
@@ -16,7 +16,7 @@ page_sections:
     <div>Our first step is to bring you and your team up to speed with what we are measuring and why. It all starts with three one-hour training sessions.</div>
     <div class="interior-list">
       <h3>Session 1</h3>
-      <div>What to measure to find out how you stack up</div>
+      <div>What to measure to find out how you stack up.</div>
       <h3>Session 2</h3>
       <div>How to take action on those metrics.</div>
       <h3>Session 3</h3>
@@ -39,13 +39,16 @@ page_sections:
   content: How well is your team meeting its software development goals? We send you a weekly diagnostics report that breaks down how your team is doing across four key research-backed metrics that are strongly correlated with not only software delivery performance, but organizational performance as well.
   media:
     image: "/assets/img/lights.jpg"
-- block: text-1
+- block: feature-2
   headline: What To Expect
   content: >-
-    <ul style="margin-left:2em"><li>Three one-hour training sessions with you and your team</li>
-    <li>One customized software delivery benchmark report</li>
-    <li>Three months of automated weekly performance metrics in your inbox</li></ul>
-
+    <div class="interior-list">
+      <div>One customized software delivery benchmark report.</div>
+      <div>Two months of automated weekly performance metrics in your inbox.</div>
+      <div>Three one-hour training sessions with your team.</div>
+    </div>
+  media:
+    image: "/assets/img/afterburn-logo.png"
 - block: text-1
   headline: Request to Join!
   content: >-
