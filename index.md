@@ -4,7 +4,7 @@ title: Afterburn
 date: 2017-11-22 23:00:00 +0000
 page_sections:
 - block: header-3
-  logo: "/assets/img/afterburn-logo.png"
+  logo: "/assets/img/nebbia-logo.jpg"
 - block: hero-2
   headline: make your <br/> <strong>Software Delivery Performance Take Off</strong>
   content: Building software doesn’t have to feel like drudgery. Afterburn by Nebbia Technology helps you make decisions, measure your progress, ease stress, and help you get back to enjoying software development.
@@ -48,7 +48,7 @@ page_sections:
       <div>Three one-hour training sessions with your team.</div>
     </div>
   media:
-    image: "/assets/img/afterburn-logo.png"
+    image: "/assets/img/afterburn-logo-2.png"
 - block: text-1
   headline: Request to Join!
   content: >-
