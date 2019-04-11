@@ -26,3 +26,26 @@ sitemap: false
     padding-top: 15px;
   }
 }
+
+.block-feature-1,
+.block-feature-2 {
+  p {
+    margin: 1rem 0 2rem;
+  }
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+  li {
+    font-weight: 400;
+    color: #666;
+    padding: 0.25rem 0;
+
+    &:before {
+      content: "» ";
+    }
+  }
+}
