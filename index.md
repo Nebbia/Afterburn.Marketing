@@ -70,48 +70,69 @@ page_sections:
     image: "/assets/img/performance-benchmark-snippet.png"
 - block: feature-2
   headline: Ongoing Metrics In Your Inbox
-  content: How well is your team meeting its software development goals? We send you a weekly diagnostics report that breaks down how your team is doing across four key research-backed metrics that are strongly correlated with not only software delivery performance, but organizational performance as well.
+  content: How well is your team meeting its software development goals? We send you a weekly diagnostics report that breaks down how your team is doing across key research-backed metrics that are strongly correlated with not only software delivery performance, but organizational performance as well.
   media:
     image: "/assets/img/performance-metrics-sample.png"
 - block: feature-2
-  headline: What To Expect
+  headline: The Deliverables
   content: >-
-    <div class="interior-list">
-      <div>One customized software delivery benchmark report.</div>
-      <div>Two months of automated weekly performance metrics in your inbox.</div>
-      <div>Three one-hour training sessions with your team.</div>
-    </div>
+    <p>
+      We view success as seeing your team learn the fundamentals of software delivery excellence, making sure they understand how to get there, and being confident that they know where to find the resources to help them along the way. Specifically, what we deliver to make that happen:
+    <p>
+    <p>
+      <ul>
+        <li>Three days of hands-on training and consulting with you and your team.</li>
+        <li>One customized Software Delivery Benchmark Report.</li>
+        <li>One year of automated weekly performance metrics in your inbox.</li>
+      </ul>
+    </p>
   media:
     image: "/assets/img/afterburn-logo-2.png"
-- block: text-1
-  headline: Request to Join!
-  content: >-
-    <form name="contact" netlify>
+- block: two-column-1
+  col_1:
+    headline: I'm Ready To Start!
+    content: >-
+      <form name="contact" netlify>
+        <p>
+          <label>Name <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Email <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Phone <input type="tel" name="phone" /></label>
+        </p>
+        <p>
+          <label>Repository Host <input type="text" name="repo-host" placeholder="GitHub"/></label>
+        </p>
+        <p>
+          <label>Build/Release System <input type="text" name="build-system" placeholder="Jenkins"/></label>
+        </p>
+        <p>
+          <label>Company <input type="text" name="company"/></label>
+        </p>
+        <br/>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+  col_2:
+    headline: I'd Like More Info...
+    content: >-
       <p>
-        <label>Name <input type="text" name="name" /></label>
+        That makes sense. This is a big committment for you and your team. Get 15 minutes with us and get your questions answered!
       </p>
       <p>
-        <label>Email <input type="email" name="email" /></label>
+        <!-- Calendly inline widget begin -->
+
+        <div class="calendly-inline-widget" data-url="https://calendly.com/chelsea-nebbia-tech" style="min-width:320px;height:580px;"></div>
+
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+        <!-- Calendly inline widget end -->
       </p>
-      <p>
-        <label>Phone <input type="tel" name="phone" /></label>
-      </p>
-      <p>
-        <label>Repository Host <input type="text" name="repo-host" placeholder="GitHub"/></label>
-      </p>
-      <p>
-        <label>Build/Release System <input type="text" name="build-system" placeholder="Jenkins"/></label>
-      </p>
-      <p>
-        <label>Company <input type="text" name="company"/></label>
-      </p>
-      <br/>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
 - block: footer-1
-  content: Made with Love by Nebbia Tech! ❤︎
+  content: Made with Love by Nebbia Technology! ❤︎
 ---
 
 This page is currently foo bar

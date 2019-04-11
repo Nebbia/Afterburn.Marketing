@@ -49,3 +49,9 @@ ul {
     }
   }
 }
+
+iframe {
+  overflow: hidden !important;
+  min-width: 320px !important;
+  height: 580px !important;
+}
