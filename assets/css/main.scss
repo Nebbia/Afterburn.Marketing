@@ -30,9 +30,11 @@ sitemap: false
 }
 
 .block-feature-1,
-.block-feature-2 {
+.block-feature-2,
+.column {
   p {
     margin: 1rem 0 2rem;
+    text-align: left;
   }
 }
 
