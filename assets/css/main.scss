@@ -5,6 +5,8 @@ sitemap: false
 // Partials
 @import "variables";
 @import "block";
+@import "form";
+@import "button";
 
 @media screen and (min-width: 1000px) {
   h1 {

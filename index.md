@@ -92,29 +92,37 @@ page_sections:
   col_1:
     headline: I'm Ready To Start!
     content: >-
-      <form name="contact" netlify>
-        <p>
-          <label>Name <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Email <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Phone <input type="tel" name="phone" /></label>
-        </p>
-        <p>
-          <label>Repository Host <input type="text" name="repo-host" placeholder="GitHub"/></label>
-        </p>
-        <p>
-          <label>Build/Release System <input type="text" name="build-system" placeholder="Jenkins"/></label>
-        </p>
-        <p>
-          <label>Company <input type="text" name="company"/></label>
-        </p>
-        <br/>
-        <p>
-          <button type="submit">Send</button>
-        </p>
+      <form name="contact" class="form" netlify>
+
+          <p>
+            <label for="name">Name</label>          
+            <input type="text" name="name" />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" />
+          </p>
+          <p>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" />
+          </p>
+          <p>
+            <label for="repo-host">Repository Host</label>
+            <input type="text" name="repo-host" placeholder="GitHub"/>
+          </p>
+          <p>
+            <label for="build-system">Build/Release System</label>
+            <input type="text" name="build-system" placeholder="Jenkins"/>
+          </p>
+          <p>
+            <label for="company">Company</label>
+            <input type="text" name="company"/>
+          </p>
+          <div>
+
+          <button type="submit">Let's Go!</button>
+
+          </div>
       </form>
   col_2:
     headline: I'd Like More Info...
