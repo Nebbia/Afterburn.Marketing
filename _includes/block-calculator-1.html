@@ -1,0 +1,35 @@
+{% if section.media_alignment and section.media_alignment == "Left" %}
+{% include block-feature-2.html %}
+{% else %}
+<section class="block block-calculator-1">
+  <div class="container">
+    <div class="columns">
+      <div class="column text">
+        <h2><span class="light">{{ section.headline }}</span></h2>
+        {{ section.content }}
+      </div>
+      <div class="column">
+        <form class="calc">
+          <label for="developers">Number of Developers</label>
+          <input id="developers" type="number" name="developers" class="calc-input"/>
+        </form>
+        <span id="calc-result">0</span>
+        <script>
+          (function () {
+              // logic here
+              var input = document.querySelector(".calc-input");
+              var developers = document.getElementById("developers");
+              var result = document.getElementById("calc-result");              
+              input.addEventListener('keyup', (event) => {
+
+                result.innerHTML = developers.value || 0;
+              });
+
+          })();
+        </script>
+        
+      </div>
+    </div>      
+  </div>
+</section>
+{% endif %}

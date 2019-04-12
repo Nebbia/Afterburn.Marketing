@@ -50,29 +50,26 @@ page_sections:
 - block: feature-1
   headline: We Get You Up To Speed
   content: >-
-    <p>Our first step is to bring you and your team up to speed with what we are measuring and why. It all starts with three days of training and evaluation. Throughout this time, we will work with your team to understand the specific pain points they are facing in software delivery and train the whole team on what works, what doesn't, and why.</p>
+    <p>Our first step is to bring you and your team up to speed with what we are measuring and why.</p>
+    <p>It all starts with three days of training and evaluation. Throughout this time, we will work with your team to understand the specific pain points they are facing in software delivery and train the whole team on what works, what doesn't, and why.</p>
   media:
     image: "/assets/img/jared-meeting.jpeg"
-- block: three-column-1
-  col_1:
-    headline: Day 1
-    content: Discuss what seperates high and low performers in software development performance.
-  col_2:
-    headline: Day 2
-    content: Examine what to measure to find out how you stack up.
-  col_3:
-    headline: Day 3
-    content: Show how to take action on those metrics.
-- block: feature-1
+- block: feature-2
   headline: Benchmark Your Performance
-  content: We take what you share about your process and create a customized software delivery performance benchmark for your team. From this benchmark, you can find out… so you not only know what areas you could improve in, you understand how you stack up against other teams – and how that affects your overall success.
+  content: <p>We take what you share about your process and create a customized software delivery performance benchmark for your team. From this benchmark, you find out not only what areas to focus on first, you understand how you stack up against other teams.</p>
   media:
     image: "/assets/img/performance-benchmark-snippet.png"
-- block: feature-2
+- block: feature-1
   headline: Ongoing Metrics In Your Inbox
   content: How well is your team meeting its software development goals? We send you a weekly diagnostics report that breaks down how your team is doing across key research-backed metrics that are strongly correlated with not only software delivery performance, but organizational performance as well.
   media:
     image: "/assets/img/performance-metrics-sample.png"
+- block: calculator-1
+  headline: Calculate Your Unique ROI
+  content: >-
+    <p>We've seen some of the teams we've worked with over the years go from delivering to production once every 2-3 months to once every 2-3 days. It didn't happen overnight, but through our combined hard work we made it happen. That means that in any given year, instead of being able to make about six experiments and learn from them, they can make <strong>over eighty</strong>.</p>
+    <p>That means they can try out eighty different things every year, learn from them, and adjust course. And their journey isn't over; the most elite teams deliver to production more than once per day <i>per developer</i>.</p>
+    <p>Every team is different, and change happens at different rates. One thing is universally true, time is anything but cheap. The more time we can spend doing what matters, the more time we can spend making a difference. Although we may not be able to 10x your delivery schedule in the first year, it <i>is</i> a reasonable assumption that we can help you improve your software delivery performance by <i>10%</i> at least. And with that assumption, the ROI becomes clearer.</p>
 - block: feature-2
   headline: The Deliverables
   content: >-

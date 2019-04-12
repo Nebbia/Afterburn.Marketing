@@ -14,7 +14,7 @@ sitemap: false
   }
 }
 
-.block-feature-1 {
+.block-feature-1, .block-calculator-1 {
   background: #ffcb3c;
   color: #fff;
 
@@ -31,6 +31,7 @@ sitemap: false
 
 .block-feature-1,
 .block-feature-2,
+.block-calculator-1,
 .column {
   p {
     margin: 1rem 0 2rem;
