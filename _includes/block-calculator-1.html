@@ -12,62 +12,52 @@
         <form>
           <div class="form-group">
 
-            <label for="team-members">I have <span id="team-members-result"></span> on my team.</label>
-            <input id="team-members" type="range" name="team-members" class="calc-input form-control-range" min="1" max="20" value="10" />
+            <label for="team-members">Our team has <span id="team-members-label-result"></span>.</label>
+            <input id="team-members" type="range" name="team-members" class="calc-input form-control-range" min="1"
+              max="20" value="10" />
 
           </div>
           <div class="form-group">
-            <label for="salary">They have an average salary of <span id="average-salary-result"></span>.</label>
-            <div class="input-group">
-              <div class="input-group-prepend"><span class="input-group-text">$</span></div>
-              <input id="salary" type="range" name="salary" min="50000" max="200000" step="10000" value="100000"
-                class="calc-input form-control" />
-            </div>
+            <label for="salary">We have an average salary of <span id="average-salary-label-result"></span>.</label>
+            <input id="salary" type="range" name="salary" min="50000" max="200000" step="10000" value="100000" class="calc-input form-control" />
+
           </div>
           <div class="form-group">
-            <label for="productivityPercent">Productivity Percentage Gained</label>
-            <div class="input-group">
-              <input id="productivityPercent" type="range" name="productivityPercent" min="1" max="100" step="1"
-                value="10" class="calc-input form-control" />
-              <div class="input-group-append"><span class="input-group-text">%</span></div>
-            </div>
-          </div>
-          <div class="form-group">
-
-            <label for="years">Over how many years?</label>
-            <input id="years" type="range" name="years" class="calc-input form-control" min="1" max="10" step="1"
-              value="1" />
-
+            <label for="productivityPercent">We're ready for a <span id="productivity-gained-label-result"></span>% gain in productivity.</label>
+            <input id="productivityPercent" type="range" name="productivityPercent" min="10" max="100" step="1" value="10" class="calc-input form-control" />
           </div>
         </form>
         <div>
           <div id="calc-result">0</div>
-          <div>in developer productivity gained over <span id="years-result"></span>.</div>
-          
+          <div>in developer productivity gained over three years.</div>
+
         </div>
 
         <script>
           (function () {
-            // logic here
 
             var teamMembersInput = document.getElementById("team-members");
             var salaryInput = document.getElementById("salary");
-            var yearsInput = document.getElementById("years");
             var productivityPercentInput = document.getElementById("productivityPercent");
             var calcResult = document.getElementById("calc-result");
-            calcResult.innerHTML = calculateAndFormatResult();
-            setYearsResult();
-            setTeamMembers(teamMembersInput);
+          
+            //Initial run
+            runCalculation();
 
             document.querySelectorAll(".calc-input").forEach(input => {
 
               input.addEventListener('input', (event) => {
-                calcResult.innerHTML = calculateAndFormatResult();
-                setYearsResult();
-                setTeamMembers(teamMembersInput);
+                runCalculation();
               });
 
             });
+
+            function runCalculation() {
+              setTeamMembers(teamMembersInput);
+              setAverageSalary(salaryInput);
+              setProductivityPercent(productivityPercentInput);
+              calcResult.innerHTML = calculateAndFormatResult();
+            }
 
             function calculateAndFormatResult() {
               var result = calculateResult();
@@ -79,9 +69,8 @@
             function calculateResult() {
               var developer = teamMembersInput.value;
               var salary = salaryInput.value;
-              var years = yearsInput.value;
               var percentSaved = productivityPercentInput.value;
-              var calculationResult = (developer * salary * (percentSaved / 100) * years);
+              var calculationResult = (developer * salary * (percentSaved / 100) * 3);
 
               return calculationResult;
             }
@@ -97,20 +86,8 @@
               return formattedResult;
             }
 
-            function setYearsResult() {
-              var yearsResult = document.getElementById("years-result");
-              var years = yearsInput.value;
-              if (years && years == 1) {
-                yearsResult.innerHTML = years + " year";
-              }
-              else if (years && years > 1) {
-                yearsResult.innerHTML = years + " years";
-              }
-
-            }
-
             function setTeamMembers(membersInput) {
-              var teamMembersResult = document.getElementById("team-members-result");
+              var teamMembersResult = document.getElementById("team-members-label-result");
               var membersCount = membersInput.value;
               if (membersCount && membersCount == 1) {
                 teamMembersResult.innerHTML = membersCount + " member";
@@ -121,7 +98,15 @@
             }
 
             function setAverageSalary(salaryInput) {
+              var averageSalaryResult = document.getElementById("average-salary-label-result");
+              var averageSalary = salaryInput.value || 0;
+              averageSalaryResult.innerHTML = formatResult(averageSalary);
+            }
 
+            function setProductivityPercent(productivityPercentInput) {
+              var productivityPercentResult = document.getElementById("productivity-gained-label-result");
+              var productivityPercent = productivityPercentInput.value || 0;
+              productivityPercentResult.innerHTML = productivityPercent;
             }
 
           })();

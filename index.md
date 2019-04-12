@@ -67,9 +67,9 @@ page_sections:
 - block: calculator-1
   headline: Calculate Your Unique ROI
   content: >-
-    <p>We've seen some of the teams we've worked with over the years go from delivering to production once every 2-3 months to once every 2-3 days. It didn't happen overnight, but through our combined hard work we made it happen. That means that in any given year, instead of being able to make about six experiments and learn from them, they can make <strong>over eighty</strong>.</p>
-    <p>That means they can try out eighty different things every year, learn from them, and adjust course. And their journey isn't over; the most elite teams deliver to production more than once per day <i>per developer</i>.</p>
-    <p>Every team is different, and change happens at different rates. One thing is universally true, time is anything but cheap. The more time we can spend doing what matters, the more time we can spend making a difference. Although we may not be able to 10x your delivery schedule in the first year, it <i>is</i> a reasonable assumption that we can help you improve your software delivery performance by <i>10%</i> at least. And with that assumption, the ROI becomes clearer.</p>
+    <p>Some of the teams we've worked with over the years go from delivering to production once every 2-3 months to once every 2-3 days. That change didn't happen overnight, and how quickly teams teams adopt software performance delivery strategies differs. Although change can be painful, the results are well worth it.</p>
+    <p>Imagine the productivity gains if your team could deliver something new every day.</p>
+    <p>The more often we can iterate, the more decisions we can make and the less risk there is in each one. The idea is to course correct faster and with better information. Although we may not be able to improve your delivery performance by 10x in the first year, it <i>is</i> a completely reasonable assumption that we can help you improve your software delivery performance by <i>at least</i> 10%.</p>
 - block: feature-2
   headline: The Deliverables
   content: >-
