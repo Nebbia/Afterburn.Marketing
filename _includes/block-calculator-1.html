@@ -1,35 +1,134 @@
 {% if section.media_alignment and section.media_alignment == "Left" %}
 {% include block-feature-2.html %}
 {% else %}
-<section class="block block-calculator-1">
+<section class="block block-two-column-1">
   <div class="container">
     <div class="columns">
-      <div class="column text">
+      <div class="column">
         <h2><span class="light">{{ section.headline }}</span></h2>
         {{ section.content }}
       </div>
       <div class="column">
-        <form class="calc">
-          <label for="developers">Number of Developers</label>
-          <input id="developers" type="number" name="developers" class="calc-input"/>
+        <form>
+          <div class="form-group">
+
+            <label for="team-members">I have <span id="team-members-result"></span> on my team.</label>
+            <input id="team-members" type="range" name="team-members" class="calc-input form-control-range" min="1" max="20" value="10" />
+
+          </div>
+          <div class="form-group">
+            <label for="salary">They have an average salary of <span id="average-salary-result"></span>.</label>
+            <div class="input-group">
+              <div class="input-group-prepend"><span class="input-group-text">$</span></div>
+              <input id="salary" type="range" name="salary" min="50000" max="200000" step="10000" value="100000"
+                class="calc-input form-control" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="productivityPercent">Productivity Percentage Gained</label>
+            <div class="input-group">
+              <input id="productivityPercent" type="range" name="productivityPercent" min="1" max="100" step="1"
+                value="10" class="calc-input form-control" />
+              <div class="input-group-append"><span class="input-group-text">%</span></div>
+            </div>
+          </div>
+          <div class="form-group">
+
+            <label for="years">Over how many years?</label>
+            <input id="years" type="range" name="years" class="calc-input form-control" min="1" max="10" step="1"
+              value="1" />
+
+          </div>
         </form>
-        <span id="calc-result">0</span>
+        <div>
+          <div id="calc-result">0</div>
+          <div>in developer productivity gained over <span id="years-result"></span>.</div>
+          
+        </div>
+
         <script>
           (function () {
-              // logic here
-              var input = document.querySelector(".calc-input");
-              var developers = document.getElementById("developers");
-              var result = document.getElementById("calc-result");              
-              input.addEventListener('keyup', (event) => {
+            // logic here
 
-                result.innerHTML = developers.value || 0;
+            var teamMembersInput = document.getElementById("team-members");
+            var salaryInput = document.getElementById("salary");
+            var yearsInput = document.getElementById("years");
+            var productivityPercentInput = document.getElementById("productivityPercent");
+            var calcResult = document.getElementById("calc-result");
+            calcResult.innerHTML = calculateAndFormatResult();
+            setYearsResult();
+            setTeamMembers(teamMembersInput);
+
+            document.querySelectorAll(".calc-input").forEach(input => {
+
+              input.addEventListener('input', (event) => {
+                calcResult.innerHTML = calculateAndFormatResult();
+                setYearsResult();
+                setTeamMembers(teamMembersInput);
               });
+
+            });
+
+            function calculateAndFormatResult() {
+              var result = calculateResult();
+              var formattedResult = formatResult(result);
+              console.log("Formatted and calculated result.", formattedResult);
+              return formattedResult;
+            }
+
+            function calculateResult() {
+              var developer = teamMembersInput.value;
+              var salary = salaryInput.value;
+              var years = yearsInput.value;
+              var percentSaved = productivityPercentInput.value;
+              var calculationResult = (developer * salary * (percentSaved / 100) * years);
+
+              return calculationResult;
+            }
+
+            function formatResult(number) {
+              // Create our number formatter.
+              var formatter = new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD'
+              });
+
+              var formattedResult = formatter.format(number);
+              return formattedResult;
+            }
+
+            function setYearsResult() {
+              var yearsResult = document.getElementById("years-result");
+              var years = yearsInput.value;
+              if (years && years == 1) {
+                yearsResult.innerHTML = years + " year";
+              }
+              else if (years && years > 1) {
+                yearsResult.innerHTML = years + " years";
+              }
+
+            }
+
+            function setTeamMembers(membersInput) {
+              var teamMembersResult = document.getElementById("team-members-result");
+              var membersCount = membersInput.value;
+              if (membersCount && membersCount == 1) {
+                teamMembersResult.innerHTML = membersCount + " member";
+              }
+              else if (membersCount && membersCount > 1) {
+                teamMembersResult.innerHTML = membersCount + " members";
+              }
+            }
+
+            function setAverageSalary(salaryInput) {
+
+            }
 
           })();
         </script>
-        
+
       </div>
-    </div>      
+    </div>
   </div>
 </section>
 {% endif %}
